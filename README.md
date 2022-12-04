@@ -1,6 +1,6 @@
 # DataScience-Documentation
 
-It contains lecture notes of Data Science for Beginners path of [Miuul](https://www.miuul.com/) Career Journeys program.
+It contains lecture my notes of Data Science for Beginners path of [Miuul](https://www.miuul.com/) Career Journeys program.
 
 ### Lecture 1: `Introduction to Data Science and Artificial Intelligence (Veri Bilimi ve Yapay Zekaya Giriş)`
 
