@@ -31,7 +31,7 @@ pd.set_option('display.float_format', lambda x: '%.2f' % x)
 
 # ???? Dosya yolu güncellenecek !
 df = pd.read_csv(
-    "C:\\Users\\anurd\\Documents\\GitHub\\DataScience-Documentation\\L5-Dogal-Dil-Islemeye-Giris\\datasets\\amazon_reviews.csv",
+    "/datasets/amazon_reviews.csv",
     sep=",")
 df.head()
 
@@ -109,6 +109,81 @@ df['reviewText'].apply(lambda x: TextBlob(x).words).head()
 import nltk
 nltk.download('wordnet')
 
-df['reviewText'] = df['reviewText'].apply(lambda x: " ".join([Word(word).lemmatize for word in x.split()]))
+df['reviewText'] = df['reviewText'].apply(lambda x: " ".join([Word(word).lemmatize() for word in x.split()]))
 
+# ****************************
+# Text Visualization
+# ****************************
+
+# Terim Frekanslarının Hesaplanması
+#----------------------------------
+
+tf = df['reviewText'].apply(lambda x: pd.value_counts(x.split())).sum(axis=0).reset_index()
+# Sütun isimlerini güncelleme
+# index, 0 -> words, tf
+tf.columns = ["words", "tf"]
+# Azalan olacak şekilde sıralama
+tf.sort_values("tf", ascending=False)
+
+# Barplot / Sütun grafik
+#------------------------
+
+# Sütun grafikte bütün değerler göstermek yerine sınır belirlemek daha mantıklı olacaktır
+
+tf[tf["tf"] > 500].plot.bar(x="words", y="tf")
+plt.show()
+
+# Word Cloud / Kelime bulutu
+#---------------------------
+
+# Kelimelerin frekanslarına göre resim oluşturma işlemidir
+# Bu işlem için veri setindeki bütün satırların tek bir string olarak ifade edilmesi gerekir
+text = " ".join(i for i in df.reviewText)
+
+wordcloud = WordCloud().generate(text)
+plt.imshow(wordcloud, interpolation="bilinear")
+plt.axis("off")
+plt.show()
+
+wordcloud.to_file("wordcloud_black.png")
+
+# Örnek özelleştirme
+wordcloud = WordCloud(
+    max_font_size=50,
+    max_words=100,
+    background_color="white"
+).generate(text)
+
+plt.figure()
+plt.imshow(wordcloud, interpolation="bilinear")
+plt.axis("off")
+plt.show()
+
+wordcloud.to_file("wordcloud_white.png")
+
+# Şablonlara göre Word Cloud
+#---------------------------
+
+# bir resmin üzerine wordcloud yapılması amaçlanmaktadır
+tr_mask = np.array(Image.open("L5-Dogal-Dil-Islemeye-Giris/tr.png"))
+
+wc = WordCloud(
+    background_color="white",
+    max_words=1000,
+    mask=tr_mask,
+    contour_width=3,
+    contour_color="firebrick"
+)
+
+wc.generate(text)
+plt.figure(figsize=[10, 10])
+plt.imshow(wc, interpolation="bilinear")
+plt.axis("off")
+plt.show()
+
+wordcloud.to_file("wc_sablon.png")
+
+# ****************************
+# Sentiment Analysis
+# ****************************
 
