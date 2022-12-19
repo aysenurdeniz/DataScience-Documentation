@@ -66,3 +66,6 @@ It contains lecture my notes of Data Science for Beginners path of [Miuul](https
 - Database Query with SQL (SQL ile Veri Tabanı Sorgulama)
 - Relational Database (İlişkisel Veri Tabanı)
 - **Projects**
+
+---
+Note: 'git config ssh.postBuffer 524288000' 
