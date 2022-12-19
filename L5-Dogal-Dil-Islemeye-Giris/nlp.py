@@ -109,4 +109,6 @@ df['reviewText'].apply(lambda x: TextBlob(x).words).head()
 import nltk
 nltk.download('wordnet')
 
+df['reviewText'] = df['reviewText'].apply(lambda x: " ".join([Word(word).lemmatize for word in x.split()]))
+
 
