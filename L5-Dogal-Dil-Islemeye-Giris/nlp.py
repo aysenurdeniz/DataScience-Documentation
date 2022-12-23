@@ -376,7 +376,7 @@ cross_val_score(rf_model, X_tf_idf_word, y, cv=5, n_jobs=-1).mean()
 # TF-IDF N-GRAM
 rf_model = RandomForestClassifier().fit(X_tf_idf_ngram, y)
 cross_val_score(rf_model, X_tf_idf_ngram, y, cv=5, n_jobs=-1).mean()
-#
+# 0.7861648016276703
 
 
 # Hiperparametre Optimizasyonu
