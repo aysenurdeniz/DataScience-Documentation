@@ -2,15 +2,13 @@
 
 It contains lecture my notes of Data Science for Beginners path of [Miuul](https://www.miuul.com/) Career Journeys program.
 
-### Lecture 1: Introduction to Data Science and Artificial Intelligence (Veri Bilimi ve Yapay Zekaya Giriş)
+### Lecture 1: `Introduction to Data Science and Artificial Intelligence (Veri Bilimi ve Yapay Zekaya Giriş)`
 
 ---
 - Introduction to Data Science and Artificial Intelligence (Veri Bilimi ve Yapay Zekaya Giriş)
 - Data Literacy (Veri Okuryazarlığı)
 
-![ai](certification/certificate-of-completion-for-ai.jpg)
-
-### Lecture 2: Python Programming for Data Science (Veri Bilimi için Python Programlama)
+### Lecture 2: `Python Programming for Data Science (Veri Bilimi için Python Programlama)`
 
 ---
 - Environment Settings (Çalışma Ortamı Ayarları)
@@ -24,8 +22,6 @@ It contains lecture my notes of Data Science for Beginners path of [Miuul](https
 - Data Analysis with Python: Advanced Functional Exploratory Data Analysis (Gelişmiş Fonksiyonel Keşifçi Veri Analizi)
 - **Projects**
 
-![pp](certification/certificate-of-completion-for-veri-bilimi-icin-python-programlama.png)
-
 ### Lecture 3: `Feature Engineering (Özellik Mühendisliği)`
 
 ---
@@ -36,9 +32,7 @@ It contains lecture my notes of Data Science for Beginners path of [Miuul](https
 - General Practice (Genel Uygulama)
 - **Projects**
 
-![fe](certification/certificate-of-completion-for-ozellik-muhendisligi.png)
-
-### Lecture 4: Machine Learning (Makine Öğrenmesi)
+### Lecture 4: `Machine Learning (Makine Öğrenmesi)`
 
 ---
 - Basic Concepts (Temel Kavramlar)
@@ -52,9 +46,7 @@ It contains lecture my notes of Data Science for Beginners path of [Miuul](https
 - Machine Learning Pipeline (Makine Öğrenmesi Boru Hattı)
 - **Projects**
 
-![ml](certification/certificate-of-completion-for-makine-ogrenmesi.png)
-
-### Lecture 5: Natural Language Processing / NLP (Doğal Dil İşlemeye Giriş)
+### Lecture 5: `Natural Language Processing / NLP (Doğal Dil İşlemeye Giriş)`
 
 ---
 - Text Pre-Processing (Metin Ön İşleme)
@@ -63,9 +55,7 @@ It contains lecture my notes of Data Science for Beginners path of [Miuul](https
 - Hyperparameter Optimization (Hiperparametre Optimizasyonu)
 - **Projects**
 
-![nlp](certification/certificate-of-completion-for-dogal-dil-isleme.png)
-
-### Lecture 6: Querying MS SQL (MS SQL Sorgulama)
+### Lecture 6: `Querying MS SQL (MS SQL Sorgulama)`
 
 ---
 - Introduction (Giriş)
@@ -76,5 +66,3 @@ It contains lecture my notes of Data Science for Beginners path of [Miuul](https
 - Database Query with SQL (SQL ile Veri Tabanı Sorgulama)
 - Relational Database (İlişkisel Veri Tabanı)
 - **Projects**
-
-![mssql](certification/certificate-of-completion-for-mssql.jpg)
