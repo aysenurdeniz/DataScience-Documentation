@@ -1,0 +1,65 @@
+### Environment Settings (Çalışma Ortamı Ayarları)  
+
+*Virtual Environment and Package Management*
+
+* Sanal ortamların listelenmesi
+
+``` conda env list ```
+
+* Sanal ortam oluşturma
+
+``` conda create -n verilmekistenenisim ```
+
+* Sanal ortamı aktif etme
+
+``` conda activate aktifedilmesiistenensanalortam ```
+
+* Sanal ortamı de-aktif etme 
+
+``` conda deactivate de-aktifedilmesiistenensanalortam ```
+
+* Sanal ortamlardaki paketleri listeler
+
+``` conda list ```
+
+* Sanal ortama paket yükleme
+
+``` conda install ... / ex. conda install numpy ```
+
+* Aynı anda birden fazla paket yükleme
+
+``` 
+conda install ... ... ... / bir boşluk bırakarak diğer paketlerin ismini yazmak yeterli olacaktır.
+ex. conda install pandas scipy 
+```
+
+* Paket silme
+
+```conda remove silinecekpaketismi ```
+
+* Belirli bir versiyona göre paket yükleme
+
+``` conda install numpy=1.20.1 ```
+
+* Paket yükseltme (bütün kütüphaneleri güncelleme)
+
+``` conda upgrade conda ```
+
+**pip**: pypi (python package index)
+
+* ```pip install pandas```
+* ```pip install pandas==1.2.1```
+
+* Paketleri aktarmak için yaml ya da txt dosyası oluşturma
+
+```conda env export > environment.yaml```
+
+* Paketleri çalışma ortamına dahil etme (ex. environment.yaml)
+
+``` conda env create -f environment.yaml ```
+
+* Sanal ortamı silme
+
+``` conda env remove -n ortamismi ```
+
+---
